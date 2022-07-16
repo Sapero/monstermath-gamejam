@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2022-07-16T12:16:14.787+02:00
-  initializedAtString: 2022-07-16T12:16:14.787+02:00
+  lastUpdatedAtString: 2022-07-16T15:07:06.145+02:00
+  initializedAtString: 2022-07-16T12:34:21.201+02:00
   currentGitRemote:
     name: origin
     url: https://github.com/Sapero/monstermath-gamejam.git
