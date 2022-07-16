@@ -8,22 +8,41 @@ public class Enemy : MonoBehaviour
     public GameObject playerDice;
     private Vector3 startPos;
     private Vector3 endPos;
-    //private float distance = 5f;
 
-    public float lerpTime = 10;
+    public float lerpTime = 5.0f;
     private float currentLerpTime = 0;
     private bool keyHit = false;
 
     private float points = 0;
-    //private float timer = 0f;
     private float highScore = 0;
     public int level = 0;
+
+    bool checkIfSameRotation() {
+        Vector3 playerAngles = playerDice.transform.eulerAngles;
+        Vector3 enemyAngles = enemy.transform.eulerAngles;
+        Quaternion a = Quaternion.Euler(playerAngles.x, playerAngles.y, playerAngles.z);
+        Quaternion b = Quaternion.Euler(enemyAngles.x, enemyAngles.y, enemyAngles.z);
+        float angle = Quaternion.Angle(a, b);
+        bool hasSameAngle = Mathf.Abs (angle) < 1e-3f;
+        return hasSameAngle;
+    }
+
+    void rotateEnemy() {
+        int howMuchX = Random.Range(0, 3);
+        int howMuchY = Random.Range(0, 3);
+        int howMuchZ = Random.Range(0, 3);
+        enemy.transform.Rotate(90*howMuchX, 90*howMuchY, 90*howMuchZ);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         startPos = enemy.transform.position;
         endPos = playerDice.transform.position;
+        bool sameRotation = checkIfSameRotation();
+        if(sameRotation){
+            rotateEnemy();
+        }
     }
 
     // Update is called once per frame
@@ -31,6 +50,7 @@ public class Enemy : MonoBehaviour
     {
         if (Input.GetKeyDown (KeyCode.Space)) {
             keyHit = true;
+            rotateEnemy();
         }
 
         if (keyHit == true) {
@@ -47,15 +67,9 @@ public class Enemy : MonoBehaviour
             else{
                 currentLerpTime = 0;
 
-                Vector3 enemyAngles = enemy.transform.eulerAngles;
+                bool sameRotation = checkIfSameRotation();
 
-                Quaternion a = Quaternion.Euler(enemyAngles.x, enemyAngles.y, enemyAngles.z);
-                Quaternion b = Quaternion.Euler(180f, 0f, -180f);
-                float angle = Quaternion.Angle(a, b);
-                bool sameRotation = Mathf.Abs (angle) < 1e-3f;
-                Debug.Log(a);
-
-                if(enemy.transform.eulerAngles == playerDice.transform.eulerAngles) {
+                if(sameRotation) {
                     points += 1;
                     
                     if(points > highScore) {
@@ -66,15 +80,15 @@ public class Enemy : MonoBehaviour
                     }
 
                     level += 1;
-                    lerpTime -= 1;
-                    Debug.Log("Level: " + level);
-                    Debug.Log("LerpTime: " + lerpTime);
+                    lerpTime *= 0.75f;
+                    //Debug.Log("Level: " + level);
+                    //Debug.Log("LerpTime: " + lerpTime);
                 } else {
-                    Debug.Log(playerDice.transform.eulerAngles);
-                    Debug.Log(enemy.transform.eulerAngles);
+                    //Debug.Log(playerDice.transform.eulerAngles);
+                    //Debug.Log(enemy.transform.eulerAngles);
 
                     if(points <= highScore) {
-                        Debug.Log("Try again? [Press SPACE]");
+                        Debug.Log("Score: " + points + ". High score: " + highScore + ". Try again? [Press SPACE]");
                      } else if(points > 0) {
                          Debug.Log("Congrats, " + highScore + " is a new high score! Try again? [Press SPACE]");
                      };
@@ -85,16 +99,18 @@ public class Enemy : MonoBehaviour
                     keyHit = false;
 
                     level = 0;
-                    lerpTime = 10;
+                    lerpTime = 5;
                     //Debug.Log("Level: " + level);
                     //Debug.Log("LerpTime: " + lerpTime);
                 }
 
-                int howMuchX = Random.Range(0, 3);
-                int howMuchY = Random.Range(0, 3);
-                int howMuchZ = Random.Range(0, 3);
                 enemy.transform.position = startPos;
-                enemy.transform.Rotate(90*howMuchX, 90*howMuchY, 90*howMuchZ);
+
+                rotateEnemy();
+                bool sameRot = checkIfSameRotation();
+                if(sameRot){
+                    rotateEnemy();
+                }
             }
         }
     }
