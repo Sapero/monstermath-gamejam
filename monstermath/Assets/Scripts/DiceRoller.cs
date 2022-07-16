@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class DiceRoller : MonoBehaviour
 {
-    // Variables
-    public float rotationSpeed = 1.0f;
-    public float verticalInput;
-    public float horizontalInput;
 
     // Start is called before the first frame update
     void Start()
@@ -18,10 +14,21 @@ public class DiceRoller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
-
-        transform.Rotate(Vector3.right, rotationSpeed * verticalInput * Time.deltaTime);
-        transform.Rotate(Vector3.up, rotationSpeed * horizontalInput * Time.deltaTime);
+        if (Input.GetKeyDown("d"))
+        {
+            transform.Rotate(0, 90, 0);
+        }
+        if (Input.GetKeyDown("a"))
+        {
+            transform.Rotate(0, -90, 0);
+        }
+        if (Input.GetKeyDown("w"))
+        {
+            transform.Rotate(90, 0, 0);
+        }
+        if (Input.GetKeyDown("s"))
+        {
+            transform.Rotate(-90, 0, 0);
+        }
     }
 }
