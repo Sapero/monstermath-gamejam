@@ -5,13 +5,17 @@ using UnityEngine;
 public class DiceRoller : MonoBehaviour
 {
     public GameObject objectToRotate;
+    public Transform enemy;
+    private Quaternion lookRotation;
+    
+    public float RotationSpeed;
     private bool rotating;
     private float speed = 0.2f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     private bool checkIfOkMove() {
@@ -46,6 +50,15 @@ public class DiceRoller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            Vector3 enemyDirection = (enemy.position - transform.position).normalized;
+            lookRotation = Quaternion.LookRotation(enemyDirection);
+            //transform.rotation = lookRotation;
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * RotationSpeed);
+        }
+
+        //TODO: implement so that up/down changes behaviour depending on direction towards the enemy
+
         if (Input.GetKeyDown("a"))
         {
             Vector3 vector = new Vector3(0, 90, 0);

@@ -71,7 +71,7 @@ public class Enemy : MonoBehaviour
                          Debug.Log("Congrats, " + highScore + " is a new high score! Try again? [Press SPACE]");
                      };
 
-                    Debug.Log(playerDice.transform.eulerAngles);
+                    //Debug.Log(playerDice.transform.eulerAngles);
                     
                     points = 0;
                     keyHit = false;
