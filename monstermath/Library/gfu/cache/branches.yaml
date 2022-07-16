@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2022-07-16T22:23:39.926+02:00
-  initializedAtString: 2022-07-16T20:48:18.005+02:00
+  lastUpdatedAtString: 2022-07-16T22:37:33.705+02:00
+  initializedAtString: 2022-07-16T22:36:32.323+02:00
   localBranches:
   - name: develop
     tracking: origin/develop
@@ -22,6 +22,8 @@ MonoBehaviour:
     tracking: origin/environment
   - name: github-for-unity
     tracking: 
+  - name: withmodels
+    tracking: origin/withmodels
   remoteBranches:
   - name: origin/develop
     tracking: '[None]'
@@ -44,6 +46,7 @@ MonoBehaviour:
     - develop
     - environment
     - github-for-unity
+    - withmodels
     values:
     - name: develop
       remote:
@@ -60,6 +63,11 @@ MonoBehaviour:
         name: 
         url: 
       trackingBranch: 
+    - name: withmodels
+      remote:
+        name: origin
+        url: https://github.com/Sapero/monstermath-gamejam.git
+      trackingBranch: withmodels
   remoteConfigBranches:
     keys:
     - origin
