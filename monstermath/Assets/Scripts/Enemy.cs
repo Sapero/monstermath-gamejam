@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     private Vector3 startPos;
     private Vector3 endPos;
 
-    public float lerpTime = 5.0f;
+    public float lerpTime = 10.0f;
     private float currentLerpTime = 0;
     private bool keyHit = false;
 
@@ -31,7 +31,23 @@ public class Enemy : MonoBehaviour
         int howMuchX = Random.Range(0, 3);
         int howMuchY = Random.Range(0, 3);
         int howMuchZ = Random.Range(0, 3);
-        enemy.transform.Rotate(90*howMuchX, 90*howMuchY, 90*howMuchZ);
+
+        if(level <= 5){
+            enemy.transform.Rotate(0, 0, 90*howMuchZ);
+            lerpTime *= 0.8f;
+            if(level == 5) {
+                lerpTime = 10.0f;
+            }
+        } else if (level <= 10){
+            enemy.transform.Rotate(90*howMuchX, 0, 90*howMuchZ);
+            lerpTime *= 0.8f;
+            if(level == 10) {
+                lerpTime = 10.0f;
+            }
+        } else if (level > 11) {
+            enemy.transform.Rotate(90*howMuchX, 90*howMuchY, 90*howMuchZ);
+            lerpTime *= 0.8f;
+        }
     }
 
     // Start is called before the first frame update
@@ -80,7 +96,7 @@ public class Enemy : MonoBehaviour
                     }
 
                     level += 1;
-                    lerpTime *= 0.75f;
+                    //lerpTime *= 0.75f;
                     //Debug.Log("Level: " + level);
                     //Debug.Log("LerpTime: " + lerpTime);
                 } else {
@@ -99,7 +115,7 @@ public class Enemy : MonoBehaviour
                     keyHit = false;
 
                     level = 0;
-                    lerpTime = 5;
+                    lerpTime = 10.0f;
                     //Debug.Log("Level: " + level);
                     //Debug.Log("LerpTime: " + lerpTime);
                 }
