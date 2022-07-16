@@ -10,13 +10,14 @@ public class Enemy : MonoBehaviour
     private Vector3 endPos;
     //private float distance = 5f;
 
-    private float lerpTime = 5;
+    public float lerpTime = 10;
     private float currentLerpTime = 0;
     private bool keyHit = false;
 
     private float points = 0;
     private float timer = 0f;
     private float highScore = 0;
+    public int level = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -41,11 +42,11 @@ public class Enemy : MonoBehaviour
             float Perc = currentLerpTime/lerpTime;
             enemy.transform.position = Vector3.Lerp(startPos, endPos, Perc);
 
-            if(timer <= 5f){
-                timer += Time.deltaTime;
+            if(enemy.transform.position != endPos){
+                //timer += Time.deltaTime;
             }
             else{
-                timer = 0;
+                //timer = 0;
                 //Spawn Enemy
                 enemy.transform.position = startPos;
                 currentLerpTime = 0;
@@ -64,6 +65,9 @@ public class Enemy : MonoBehaviour
                     } else {
                         Debug.Log(points + " point(s)");
                     }
+
+                    //level += 1;
+                    //lerpTime -= 1;
                 } else {
                     if(points < highScore) {
                         Debug.Log("Try again? [Press SPACE]");
@@ -75,9 +79,15 @@ public class Enemy : MonoBehaviour
                     
                     points = 0;
                     keyHit = false;
+
+                    //level = 0;
+                    //lerpTime = 10;
                 }
 
-                enemy.transform.Rotate(0, 90, 0);
+                int howMuchX = Random.Range(0, 3);
+                int howMuchY = Random.Range(0, 3);
+                int howMuchZ = Random.Range(0, 3);
+                enemy.transform.Rotate(90*howMuchX, 90*howMuchY, 90*howMuchZ);
             }
         }
     }
