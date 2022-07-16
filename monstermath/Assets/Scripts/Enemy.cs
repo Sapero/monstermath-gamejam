@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     private bool keyHit = false;
 
     private float points = 0;
-    private float timer = 0f;
+    //private float timer = 0f;
     private float highScore = 0;
     public int level = 0;
 
@@ -42,19 +42,10 @@ public class Enemy : MonoBehaviour
             float Perc = currentLerpTime/lerpTime;
             enemy.transform.position = Vector3.Lerp(startPos, endPos, Perc);
 
-            if(enemy.transform.position != endPos){
-                //timer += Time.deltaTime;
+            if(enemy.transform.position.x != endPos.x){
             }
             else{
-                //timer = 0;
-                //Spawn Enemy
-                enemy.transform.position = startPos;
                 currentLerpTime = 0;
-                /*Debug.Log("enemy");
-                Debug.Log(enemy.transform.position);
-                Debug.Log(enemy.transform.eulerAngles.x);
-                Debug.Log(enemy.transform.eulerAngles.y);
-                Debug.Log(enemy.transform.eulerAngles.z);*/
 
                 if(enemy.transform.eulerAngles == playerDice.transform.eulerAngles) {
                     points += 1;
@@ -66,10 +57,15 @@ public class Enemy : MonoBehaviour
                         Debug.Log(points + " point(s)");
                     }
 
-                    //level += 1;
-                    //lerpTime -= 1;
+                    level += 1;
+                    lerpTime -= 1;
+                    Debug.Log("Level: " + level);
+                    Debug.Log("LerpTime: " + lerpTime);
                 } else {
-                    if(points < highScore) {
+                    Debug.Log(playerDice.transform.eulerAngles);
+                    Debug.Log(enemy.transform.eulerAngles);
+
+                    if(points <= highScore) {
                         Debug.Log("Try again? [Press SPACE]");
                      } else if(points > 0) {
                          Debug.Log("Congrats, " + highScore + " is a new high score! Try again? [Press SPACE]");
@@ -80,13 +76,16 @@ public class Enemy : MonoBehaviour
                     points = 0;
                     keyHit = false;
 
-                    //level = 0;
-                    //lerpTime = 10;
+                    level = 0;
+                    lerpTime = 10;
+                    //Debug.Log("Level: " + level);
+                    //Debug.Log("LerpTime: " + lerpTime);
                 }
 
                 int howMuchX = Random.Range(0, 3);
                 int howMuchY = Random.Range(0, 3);
                 int howMuchZ = Random.Range(0, 3);
+                enemy.transform.position = startPos;
                 enemy.transform.Rotate(90*howMuchX, 90*howMuchY, 90*howMuchZ);
             }
         }

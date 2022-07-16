@@ -56,5 +56,15 @@ public class DiceRoller : MonoBehaviour
             Vector3 vector = new Vector3(0, 0, -90);
             StartRotation(vector);
         }
+        if (Input.GetKeyDown("q"))
+        {
+            Vector3 vector = new Vector3(-90, 0, 0);
+            StartRotation(vector);
+        }
+        if (Input.GetKeyDown("e"))
+        {
+            Vector3 vector = new Vector3(90, 0, 0);
+            StartRotation(vector);
+        }
     }
 }

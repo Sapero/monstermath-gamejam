@@ -13,16 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2022-07-16T20:22:06.932+02:00
+  lastUpdatedAtString: 2022-07-16T20:48:17.243+02:00
   initializedAtString: 2022-07-16T20:08:23.199+02:00
   entries:
-  - path: monstermath\Assets\Dice_6\Prefabs\Dice_d6_Plastic Glossy Pure write.prefab
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Assets\Dice_6\Prefabs\Dice_d6_Plastic
-      Glossy Pure write.prefab
-    projectPath: Assets\Dice_6\Prefabs\Dice_d6_Plastic Glossy Pure write.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: monstermath\Assets\Scripts\DiceRoller.cs
     fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Assets\Scripts\DiceRoller.cs
     projectPath: Assets\Scripts\DiceRoller.cs
@@ -35,363 +28,99 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: monstermath\Library\ArtifactDB
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\ArtifactDB
-    projectPath: Library\ArtifactDB
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: monstermath\Library\Artifacts\0e\0e5750efddac1d9bc41817453188b240
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\0e\0e5750efddac1d9bc41817453188b240
-    projectPath: Library\Artifacts\0e\0e5750efddac1d9bc41817453188b240
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\0e\0ef72167a42502ee41f97bb0b9841dbd
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\0e\0ef72167a42502ee41f97bb0b9841dbd
-    projectPath: Library\Artifacts\0e\0ef72167a42502ee41f97bb0b9841dbd
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\0f\0f6bdd8e5e20cbcc4aa27724f02d429f
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\0f\0f6bdd8e5e20cbcc4aa27724f02d429f
-    projectPath: Library\Artifacts\0f\0f6bdd8e5e20cbcc4aa27724f02d429f
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\0f\0fd3ab852bb868270b6ef254ea255999
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\0f\0fd3ab852bb868270b6ef254ea255999
-    projectPath: Library\Artifacts\0f\0fd3ab852bb868270b6ef254ea255999
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\10\1041c947bd4115c3417078b154cb665a
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\10\1041c947bd4115c3417078b154cb665a
-    projectPath: Library\Artifacts\10\1041c947bd4115c3417078b154cb665a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\10\105f2f32a06d13e581fd405047288948
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\10\105f2f32a06d13e581fd405047288948
-    projectPath: Library\Artifacts\10\105f2f32a06d13e581fd405047288948
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\14\149b6ac73ca6d2b0631414ae312c0a86
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\14\149b6ac73ca6d2b0631414ae312c0a86
-    projectPath: Library\Artifacts\14\149b6ac73ca6d2b0631414ae312c0a86
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\14\14bf6f65aa3fe0f8efdd067d20af8dd7
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\14\14bf6f65aa3fe0f8efdd067d20af8dd7
-    projectPath: Library\Artifacts\14\14bf6f65aa3fe0f8efdd067d20af8dd7
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\18\184714b82825a214658c313408816ffa
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\18\184714b82825a214658c313408816ffa
-    projectPath: Library\Artifacts\18\184714b82825a214658c313408816ffa
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\20\205a360967a41d03bd5779f9978cdd55
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\20\205a360967a41d03bd5779f9978cdd55
-    projectPath: Library\Artifacts\20\205a360967a41d03bd5779f9978cdd55
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\21\2180e5be8ad0a270c82ebd8c66b0dc7a
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\21\2180e5be8ad0a270c82ebd8c66b0dc7a
-    projectPath: Library\Artifacts\21\2180e5be8ad0a270c82ebd8c66b0dc7a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\22\22c016f4bbb2d3d1db618d3e54a622a5
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\22\22c016f4bbb2d3d1db618d3e54a622a5
-    projectPath: Library\Artifacts\22\22c016f4bbb2d3d1db618d3e54a622a5
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\23\23318cf341f8825ea7fcbbc8c3c438ef
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\23\23318cf341f8825ea7fcbbc8c3c438ef
-    projectPath: Library\Artifacts\23\23318cf341f8825ea7fcbbc8c3c438ef
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\33\3369d55ceaf392e056fadb60239a12b2
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\33\3369d55ceaf392e056fadb60239a12b2
-    projectPath: Library\Artifacts\33\3369d55ceaf392e056fadb60239a12b2
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\33\33bdae165b0d7a270dd5ce6308535842
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\33\33bdae165b0d7a270dd5ce6308535842
-    projectPath: Library\Artifacts\33\33bdae165b0d7a270dd5ce6308535842
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\42\425443c1cb03e56b1d847f060f5fdbb3
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\42\425443c1cb03e56b1d847f060f5fdbb3
-    projectPath: Library\Artifacts\42\425443c1cb03e56b1d847f060f5fdbb3
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\48\4830088524c73917d7c9a22fa913e6a6
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\48\4830088524c73917d7c9a22fa913e6a6
-    projectPath: Library\Artifacts\48\4830088524c73917d7c9a22fa913e6a6
+  - path: monstermath\Library\Artifacts\0d\0d84d512d48916debdd0a9cbd4dc5ab0
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\0d\0d84d512d48916debdd0a9cbd4dc5ab0
+    projectPath: Library\Artifacts\0d\0d84d512d48916debdd0a9cbd4dc5ab0
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\49\4976bd048141d147d76743ba9ea8b632
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\49\4976bd048141d147d76743ba9ea8b632
-    projectPath: Library\Artifacts\49\4976bd048141d147d76743ba9ea8b632
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\50\50a999b9f50e5e09835385c0c505efb4
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\50\50a999b9f50e5e09835385c0c505efb4
-    projectPath: Library\Artifacts\50\50a999b9f50e5e09835385c0c505efb4
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\5b\5bbb5f8cd25d8203f4098a673625e116
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\5b\5bbb5f8cd25d8203f4098a673625e116
-    projectPath: Library\Artifacts\5b\5bbb5f8cd25d8203f4098a673625e116
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\69\6905fdd91842b81986ebcd175380f116
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\69\6905fdd91842b81986ebcd175380f116
-    projectPath: Library\Artifacts\69\6905fdd91842b81986ebcd175380f116
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\6c\6c9b037b12d4a734b8dfe226c08dc723
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\6c\6c9b037b12d4a734b8dfe226c08dc723
-    projectPath: Library\Artifacts\6c\6c9b037b12d4a734b8dfe226c08dc723
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\6d\6d0de3608d05cdf463835d62c67ddd85
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\6d\6d0de3608d05cdf463835d62c67ddd85
-    projectPath: Library\Artifacts\6d\6d0de3608d05cdf463835d62c67ddd85
+  - path: monstermath\Library\Artifacts\38\3801a483a70817690a5cf12c0d97ee35
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\38\3801a483a70817690a5cf12c0d97ee35
+    projectPath: Library\Artifacts\38\3801a483a70817690a5cf12c0d97ee35
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\71\71e68fdcd7f251fa28813b9b6901efd5
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\71\71e68fdcd7f251fa28813b9b6901efd5
-    projectPath: Library\Artifacts\71\71e68fdcd7f251fa28813b9b6901efd5
+  - path: monstermath\Library\Artifacts\3d\3dc3c0a57e15ab90ce6d7e1628f97607
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\3d\3dc3c0a57e15ab90ce6d7e1628f97607
+    projectPath: Library\Artifacts\3d\3dc3c0a57e15ab90ce6d7e1628f97607
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\74\7479f5f7e7fc801fd7859d39562e338e
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\74\7479f5f7e7fc801fd7859d39562e338e
-    projectPath: Library\Artifacts\74\7479f5f7e7fc801fd7859d39562e338e
+  - path: monstermath\Library\Artifacts\42\42c759ca8ffdec6d9011928e96e78822
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\42\42c759ca8ffdec6d9011928e96e78822
+    projectPath: Library\Artifacts\42\42c759ca8ffdec6d9011928e96e78822
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\7c\7c440d94059d6424b8be6e225ef7a9e4
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\7c\7c440d94059d6424b8be6e225ef7a9e4
-    projectPath: Library\Artifacts\7c\7c440d94059d6424b8be6e225ef7a9e4
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\7d\7dd882d828687ab641c0150eeae11cb3
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\7d\7dd882d828687ab641c0150eeae11cb3
-    projectPath: Library\Artifacts\7d\7dd882d828687ab641c0150eeae11cb3
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\88\88ccf6d482d0a1a7dfe5e050786a8d02
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\88\88ccf6d482d0a1a7dfe5e050786a8d02
-    projectPath: Library\Artifacts\88\88ccf6d482d0a1a7dfe5e050786a8d02
+  - path: monstermath\Library\Artifacts\44\4487ef3fdf4a968a4c3ee8d58c22a260
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\44\4487ef3fdf4a968a4c3ee8d58c22a260
+    projectPath: Library\Artifacts\44\4487ef3fdf4a968a4c3ee8d58c22a260
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\8b\8b16c6003ffb2230d4939d7c9b44453d
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\8b\8b16c6003ffb2230d4939d7c9b44453d
-    projectPath: Library\Artifacts\8b\8b16c6003ffb2230d4939d7c9b44453d
+  - path: monstermath\Library\Artifacts\57\57454bfb42e3579dc60d1e65aaff5174
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\57\57454bfb42e3579dc60d1e65aaff5174
+    projectPath: Library\Artifacts\57\57454bfb42e3579dc60d1e65aaff5174
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\99\991b10e30769f977b8cfd23c0574bf7b
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\99\991b10e30769f977b8cfd23c0574bf7b
-    projectPath: Library\Artifacts\99\991b10e30769f977b8cfd23c0574bf7b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\9a\9abba3a0d2a6db51af556c664f6ec90f
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\9a\9abba3a0d2a6db51af556c664f6ec90f
-    projectPath: Library\Artifacts\9a\9abba3a0d2a6db51af556c664f6ec90f
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\9e\9e01590c7f06be016ed06d09173ccf35
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\9e\9e01590c7f06be016ed06d09173ccf35
-    projectPath: Library\Artifacts\9e\9e01590c7f06be016ed06d09173ccf35
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\a6\a654510a06599308c1a8d60b19b71801
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\a6\a654510a06599308c1a8d60b19b71801
-    projectPath: Library\Artifacts\a6\a654510a06599308c1a8d60b19b71801
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\a7\a7eae56d57f8549aa4de0ffabe870fc9
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\a7\a7eae56d57f8549aa4de0ffabe870fc9
-    projectPath: Library\Artifacts\a7\a7eae56d57f8549aa4de0ffabe870fc9
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\ab\ab16e55f5426c36a2b5d86d0d0b7a095
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\ab\ab16e55f5426c36a2b5d86d0d0b7a095
-    projectPath: Library\Artifacts\ab\ab16e55f5426c36a2b5d86d0d0b7a095
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\ab\ab6eb7d8a0f6b4d0f8eeaa3cf4e7ff6b
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\ab\ab6eb7d8a0f6b4d0f8eeaa3cf4e7ff6b
-    projectPath: Library\Artifacts\ab\ab6eb7d8a0f6b4d0f8eeaa3cf4e7ff6b
+  - path: monstermath\Library\Artifacts\57\57b73548214be1cf4221c2cfdf597974
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\57\57b73548214be1cf4221c2cfdf597974
+    projectPath: Library\Artifacts\57\57b73548214be1cf4221c2cfdf597974
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\ac\acc0241e6651b19c9b146aca87179804
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\ac\acc0241e6651b19c9b146aca87179804
-    projectPath: Library\Artifacts\ac\acc0241e6651b19c9b146aca87179804
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\af\afefc8fe9dff8b46174919b8232270c5
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\af\afefc8fe9dff8b46174919b8232270c5
-    projectPath: Library\Artifacts\af\afefc8fe9dff8b46174919b8232270c5
+  - path: monstermath\Library\Artifacts\62\6231638f48d02cc7d94bd72535e04de1
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\62\6231638f48d02cc7d94bd72535e04de1
+    projectPath: Library\Artifacts\62\6231638f48d02cc7d94bd72535e04de1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\b0\b00e45906ab7ec58350b1f17372fbaed
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\b0\b00e45906ab7ec58350b1f17372fbaed
-    projectPath: Library\Artifacts\b0\b00e45906ab7ec58350b1f17372fbaed
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\b7\b7b0c5553077b19794df8a2fdd112c52
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\b7\b7b0c5553077b19794df8a2fdd112c52
-    projectPath: Library\Artifacts\b7\b7b0c5553077b19794df8a2fdd112c52
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\b8\b890487d4bcffdab4e1881c5f06c5b66
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\b8\b890487d4bcffdab4e1881c5f06c5b66
-    projectPath: Library\Artifacts\b8\b890487d4bcffdab4e1881c5f06c5b66
+  - path: monstermath\Library\Artifacts\67\6725a05825ed83ca566a5a235fd81999
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\67\6725a05825ed83ca566a5a235fd81999
+    projectPath: Library\Artifacts\67\6725a05825ed83ca566a5a235fd81999
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\bb\bbff62e7c6d881dccb65bdbbdce8e9d3
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\bb\bbff62e7c6d881dccb65bdbbdce8e9d3
-    projectPath: Library\Artifacts\bb\bbff62e7c6d881dccb65bdbbdce8e9d3
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\be\be20920c2b00923d9f07668be9f8cdb1
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\be\be20920c2b00923d9f07668be9f8cdb1
-    projectPath: Library\Artifacts\be\be20920c2b00923d9f07668be9f8cdb1
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\be\be7c1dfa434f4dc8c28075fa9daa423d
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\be\be7c1dfa434f4dc8c28075fa9daa423d
-    projectPath: Library\Artifacts\be\be7c1dfa434f4dc8c28075fa9daa423d
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\c2\c2dde5260c7b45d48f8e58d13e0e100c
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\c2\c2dde5260c7b45d48f8e58d13e0e100c
-    projectPath: Library\Artifacts\c2\c2dde5260c7b45d48f8e58d13e0e100c
+  - path: monstermath\Library\Artifacts\6a\6a8866754fa9b6cecb06397ff33e8780
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\6a\6a8866754fa9b6cecb06397ff33e8780
+    projectPath: Library\Artifacts\6a\6a8866754fa9b6cecb06397ff33e8780
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\cc\cc8f2a1a654231564798e9d23fd1f768
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\cc\cc8f2a1a654231564798e9d23fd1f768
-    projectPath: Library\Artifacts\cc\cc8f2a1a654231564798e9d23fd1f768
+  - path: monstermath\Library\Artifacts\86\86cec8d69e40b5f87763fff08e0c9d66
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\86\86cec8d69e40b5f87763fff08e0c9d66
+    projectPath: Library\Artifacts\86\86cec8d69e40b5f87763fff08e0c9d66
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\d8\d88b1ddaffaeaf5cc00a7bd774c3e543
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\d8\d88b1ddaffaeaf5cc00a7bd774c3e543
-    projectPath: Library\Artifacts\d8\d88b1ddaffaeaf5cc00a7bd774c3e543
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\e5\e5bf808e18fc893a6c7952becf375c24
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\e5\e5bf808e18fc893a6c7952becf375c24
-    projectPath: Library\Artifacts\e5\e5bf808e18fc893a6c7952becf375c24
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\e5\e5ddb7f89836b80b5d4823662389ba76
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\e5\e5ddb7f89836b80b5d4823662389ba76
-    projectPath: Library\Artifacts\e5\e5ddb7f89836b80b5d4823662389ba76
+  - path: monstermath\Library\Artifacts\a7\a743f779782b54fee9009a1a57969858
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\a7\a743f779782b54fee9009a1a57969858
+    projectPath: Library\Artifacts\a7\a743f779782b54fee9009a1a57969858
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\e6\e6480192f2f95696746f9b1a6a89e074
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\e6\e6480192f2f95696746f9b1a6a89e074
-    projectPath: Library\Artifacts\e6\e6480192f2f95696746f9b1a6a89e074
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\e9\e9467698b5055c1a421ff4f298fcf66c
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\e9\e9467698b5055c1a421ff4f298fcf66c
-    projectPath: Library\Artifacts\e9\e9467698b5055c1a421ff4f298fcf66c
+  - path: monstermath\Library\Artifacts\b3\b35e2ebddbddd82a86881245c05de293
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\b3\b35e2ebddbddd82a86881245c05de293
+    projectPath: Library\Artifacts\b3\b35e2ebddbddd82a86881245c05de293
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\e9\e9bc88ab7a70d6fdba4932ded529aba9
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\e9\e9bc88ab7a70d6fdba4932ded529aba9
-    projectPath: Library\Artifacts\e9\e9bc88ab7a70d6fdba4932ded529aba9
+  - path: monstermath\Library\Artifacts\b7\b7332cb9f700a14bccb98bc3ae00b271
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\b7\b7332cb9f700a14bccb98bc3ae00b271
+    projectPath: Library\Artifacts\b7\b7332cb9f700a14bccb98bc3ae00b271
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\ec\eca7aefc0613ab2171130a32c25f1c80
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\ec\eca7aefc0613ab2171130a32c25f1c80
-    projectPath: Library\Artifacts\ec\eca7aefc0613ab2171130a32c25f1c80
+  - path: monstermath\Library\Artifacts\f3\f33ceac19382c649bb5ecd265c61261d
+    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\f3\f33ceac19382c649bb5ecd265c61261d
+    projectPath: Library\Artifacts\f3\f33ceac19382c649bb5ecd265c61261d
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\ee\ee9901e5f617e98e38c7819fadddf4ad
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\ee\ee9901e5f617e98e38c7819fadddf4ad
-    projectPath: Library\Artifacts\ee\ee9901e5f617e98e38c7819fadddf4ad
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: monstermath\Library\Artifacts\f0\f02f314959166c76921b5363ff1e6ec5
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\f0\f02f314959166c76921b5363ff1e6ec5
-    projectPath: Library\Artifacts\f0\f02f314959166c76921b5363ff1e6ec5
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\f5\f5eb5502734e799ab166af02faa12080
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\f5\f5eb5502734e799ab166af02faa12080
-    projectPath: Library\Artifacts\f5\f5eb5502734e799ab166af02faa12080
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Library\Artifacts\f8\f85a02bc924e35d4e4ae5a4516ca4214
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Artifacts\f8\f85a02bc924e35d4e4ae5a4516ca4214
-    projectPath: Library\Artifacts\f8\f85a02bc924e35d4e4ae5a4516ca4214
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: monstermath\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.dll
     fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.dll
     projectPath: Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: monstermath\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.ref.dll
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.ref.dll
-    projectPath: Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.ref.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -431,18 +160,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: monstermath\Library\EditorInstance.json
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\EditorInstance.json
-    projectPath: Library\EditorInstance.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: monstermath\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: monstermath\Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
@@ -467,12 +184,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: monstermath\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: monstermath\Library\SceneVisibilityState.asset
     fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
@@ -491,21 +202,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: monstermath\Library\SourceAssetDB
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\SourceAssetDB
-    projectPath: Library\SourceAssetDB
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: monstermath\Library\StateCache\MainStageHierarchy\4d\4d2a36d9faf65734f0bbefb3ee623532.json
     fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\StateCache\MainStageHierarchy\4d\4d2a36d9faf65734f0bbefb3ee623532.json
     projectPath: Library\StateCache\MainStageHierarchy\4d\4d2a36d9faf65734f0bbefb3ee623532.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: monstermath\Library\StateCache\PrefabStageHierarchy\73\7326c5dd34bfa4af65f0ccd279c806d3.json
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Library\StateCache\PrefabStageHierarchy\73\7326c5dd34bfa4af65f0ccd279c806d3.json
-    projectPath: Library\StateCache\PrefabStageHierarchy\73\7326c5dd34bfa4af65f0ccd279c806d3.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -515,21 +214,3 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: monstermath\Logs\AssetImportWorker0.log
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Logs\AssetImportWorker0.log
-    projectPath: Logs\AssetImportWorker0.log
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Logs\AssetImportWorker1.log
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Logs\AssetImportWorker1.log
-    projectPath: Logs\AssetImportWorker1.log
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: monstermath\Logs\shadercompiler-AssetImportWorker0.log
-    fullPath: C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath\Logs\shadercompiler-AssetImportWorker0.log
-    projectPath: Logs\shadercompiler-AssetImportWorker0.log
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
