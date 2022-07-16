@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     public GameObject playerDice;
     private Vector3 startPos;
     private Vector3 endPos;
-    private float distance = 5f;
+    //private float distance = 5f;
 
     private float lerpTime = 5;
     private float currentLerpTime = 0;
