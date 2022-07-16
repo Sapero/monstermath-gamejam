@@ -2248,14 +2248,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.07034613, y: -0.7524002, z: 0.082121775, w: 0.64977026}
-  m_LocalPosition: {x: 3.1, y: 1.45, z: 1.9}
+  m_LocalRotation: {x: 0.19982111, y: -0.7287839, z: 0.19361189, w: 0.62566763}
+  m_LocalPosition: {x: 2.72, y: 2.97, z: 1.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 12.415, y: -98.367, z: 0.051}
+  m_LocalEulerAnglesHint: {x: 32.157, y: -99.663, z: -3.317}
 --- !u!1001 &965397836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5175,9 +5175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7df3dd180614d48a1fc712d84e7d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToRotate: {fileID: 1737784006}
-  enemy: {fileID: 2016019523}
-  RotationSpeed: 1
 --- !u!1001 &1767598402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6002,9 +5999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7df3dd180614d48a1fc712d84e7d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToRotate: {fileID: 0}
-  enemy: {fileID: 0}
-  RotationSpeed: 0
 --- !u!114 &2016019519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6019,11 +6013,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 2016019517}
   playerDice: {fileID: 1737784006}
---- !u!4 &2016019523 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6138043921473953259, guid: 0d2b9188252a78b4298fb8e34d9229ee, type: 3}
-  m_PrefabInstance: {fileID: 2016019516}
-  m_PrefabAsset: {fileID: 0}
+  lerpTime: 5
+  level: 0
 --- !u!1001 &2030088513
 PrefabInstance:
   m_ObjectHideFlags: 0
