@@ -47,6 +47,14 @@ public class Enemy : MonoBehaviour
             else{
                 currentLerpTime = 0;
 
+                Vector3 enemyAngles = enemy.transform.eulerAngles;
+
+                Quaternion a = Quaternion.Euler(enemyAngles.x, enemyAngles.y, enemyAngles.z);
+                Quaternion b = Quaternion.Euler(180f, 0f, -180f);
+                float angle = Quaternion.Angle(a, b);
+                bool sameRotation = Mathf.Abs (angle) < 1e-3f;
+                Debug.Log(a);
+
                 if(enemy.transform.eulerAngles == playerDice.transform.eulerAngles) {
                     points += 1;
                     
