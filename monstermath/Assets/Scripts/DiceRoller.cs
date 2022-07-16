@@ -22,11 +22,11 @@ public class DiceRoller : MonoBehaviour
         {
             transform.Rotate(0, -90, 0);
         }
-        if (Input.GetKeyDown("w"))
+        if (Input.GetKeyDown("s"))
         {
             transform.Rotate(90, 0, 0);
         }
-        if (Input.GetKeyDown("s"))
+        if (Input.GetKeyDown("w"))
         {
             transform.Rotate(-90, 0, 0);
         }
