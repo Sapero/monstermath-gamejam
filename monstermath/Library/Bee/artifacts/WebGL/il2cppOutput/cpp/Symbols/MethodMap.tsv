@@ -3897,6 +3897,7 @@ Mathf_GammaToLinearSpace_m4D758883DC92707BEB3D1774CE252B0233309DA6	System.Single
 Mathf_IsPowerOfTwo_m76CE14ADD2BB5CF0E0E28F61826F19A7CAA015A3	System.Boolean UnityEngine.Mathf::IsPowerOfTwo(System.Int32)	UnityEngine.CoreModule
 Mathf_Max_mA9DCA91E87D6D27034F56ABA52606A9090406016	System.Single UnityEngine.Mathf::Max(System.Single,System.Single)	UnityEngine.CoreModule
 Mathf_Min_m4F2A9C5128DC3F9E84865EE7ADA8DB5DA6B8B507	System.Single UnityEngine.Mathf::Min(System.Single,System.Single)	UnityEngine.CoreModule
+Mathf_Round_m2B4D74636DB0368F222D9BD6079343E1AFB3765D	System.Single UnityEngine.Mathf::Round(System.Single)	UnityEngine.CoreModule
 Mathf_Tan_mDA8A8AB9E7C34A9F71E665288DC91C02C6375974	System.Single UnityEngine.Mathf::Tan(System.Single)	UnityEngine.CoreModule
 MathfInternal__cctor_mC2F676B6F0CC5E10406BB514D669BD196368295F	System.Void UnityEngineInternal.MathfInternal::.cctor()	UnityEngine.CoreModule
 Matrix4x4__cctor_mC8CCD92F7684B074A1457FADB8F271447FDCC93E	System.Void UnityEngine.Matrix4x4::.cctor()	UnityEngine.CoreModule
