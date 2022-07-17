@@ -63,7 +63,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown (KeyCode.Space)) {
+        if (Input.GetKeyDown (KeyCode.Space) && !keyHit) {
             keyHit = true;
             rotateEnemy();
         }
@@ -76,6 +76,10 @@ public class Enemy : MonoBehaviour
 
             float Perc = currentLerpTime/lerpTime;
             transform.position = Vector3.Lerp(startPos, dicePos, Perc);
+
+            if (Input.GetKeyDown(KeyCode.Space) && currentLerpTime > 0.5f) {
+                currentLerpTime = lerpTime-0.25f;
+            }
 
             bool hasReached = Mathf.Round(transform.position.x) == Mathf.Round(dicePos.x);
 

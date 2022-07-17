@@ -36,32 +36,22 @@ public class DiceRoller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("a"))
-        {
-            Vector3 vector = new Vector3(0, 90, 0);
-            StartRotation(vector);
-        }
-        if (Input.GetKeyDown("d"))
-        {
-            Vector3 vector = new Vector3(0, -90, 0);
-            StartRotation(vector);
-        }
-        if (Input.GetKeyDown("s"))
+        if (Input.GetKeyDown("s")  || Input.GetKeyDown("down"))
         {
             Vector3 vector = new Vector3(0, 0, 90);
             StartRotation(vector);
         }
-        if (Input.GetKeyDown("w"))
+        if (Input.GetKeyDown("w") || Input.GetKeyDown("up"))
         {
             Vector3 vector = new Vector3(0, 0, -90);
             StartRotation(vector);
         }
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown("d") || Input.GetKeyDown("right"))
         {
             Vector3 vector = new Vector3(-90, 0, 0);
             StartRotation(vector);
         }
-        if (Input.GetKeyDown("q"))
+        if (Input.GetKeyDown("a") || Input.GetKeyDown("left"))
         {
             Vector3 vector = new Vector3(90, 0, 0);
             StartRotation(vector);

@@ -866,4 +866,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Forest Pack/Scenes/DemoScene.unity
-  playerPath: C:/Users/Marcus Nygren/Development/Build
+  playerPath: C:/Users/Marcus Nygren/Development/BuildWebGL
