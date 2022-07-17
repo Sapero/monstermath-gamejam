@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public GameObject enemy;
     public GameObject playerDice;
     private Vector3 startPos;
-    private Vector3 endPos;
+    private Vector3 dicePos;
 
     public float lerpTime = 10.0f;
     private float currentLerpTime = 0;
@@ -19,7 +18,7 @@ public class Enemy : MonoBehaviour
 
     bool checkIfSameRotation() {
         Vector3 playerAngles = playerDice.transform.eulerAngles;
-        Vector3 enemyAngles = enemy.transform.eulerAngles;
+        Vector3 enemyAngles = transform.eulerAngles;
         Quaternion a = Quaternion.Euler(playerAngles.x, playerAngles.y, playerAngles.z);
         Quaternion b = Quaternion.Euler(enemyAngles.x, enemyAngles.y, enemyAngles.z);
         float angle = Quaternion.Angle(a, b);
@@ -33,28 +32,28 @@ public class Enemy : MonoBehaviour
         int howMuchZ = Random.Range(0, 3);
 
         if(level <= 5){
-            enemy.transform.Rotate(0, 0, 90*howMuchZ);
-            lerpTime *= 0.8f;
+            transform.Rotate(0, 0, 90*howMuchZ);
+            lerpTime *= 0.9f;
             if(level == 5) {
                 lerpTime = 10.0f;
             }
         } else if (level <= 10){
-            enemy.transform.Rotate(90*howMuchX, 0, 90*howMuchZ);
-            lerpTime *= 0.8f;
+            transform.Rotate(90*howMuchX, 0, 90*howMuchZ);
+            lerpTime *= 0.9f;
             if(level == 10) {
                 lerpTime = 10.0f;
             }
         } else if (level > 11) {
-            enemy.transform.Rotate(90*howMuchX, 90*howMuchY, 90*howMuchZ);
-            lerpTime *= 0.8f;
+            transform.Rotate(90*howMuchX, 90*howMuchY, 90*howMuchZ);
+            lerpTime *= 0.9f;
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        startPos = enemy.transform.position;
-        endPos = playerDice.transform.position;
+        startPos = transform.position;
+        dicePos = playerDice.transform.position;
         bool sameRotation = checkIfSameRotation();
         if(sameRotation){
             rotateEnemy();
@@ -76,11 +75,11 @@ public class Enemy : MonoBehaviour
             }
 
             float Perc = currentLerpTime/lerpTime;
-            enemy.transform.position = Vector3.Lerp(startPos, endPos, Perc);
+            transform.position = Vector3.Lerp(startPos, dicePos, Perc);
 
-            if(enemy.transform.position.x != endPos.x){
-            }
-            else{
+            bool hasReached = Mathf.Round(transform.position.x) == Mathf.Round(dicePos.x);
+
+            if(hasReached){
                 currentLerpTime = 0;
 
                 bool sameRotation = checkIfSameRotation();
@@ -101,7 +100,7 @@ public class Enemy : MonoBehaviour
                     //Debug.Log("LerpTime: " + lerpTime);
                 } else {
                     //Debug.Log(playerDice.transform.eulerAngles);
-                    //Debug.Log(enemy.transform.eulerAngles);
+                    //Debug.Log(transform.eulerAngles);
 
                     if(points <= highScore) {
                         Debug.Log("Score: " + points + ". High score: " + highScore + ". Try again? [Press SPACE]");
@@ -120,14 +119,20 @@ public class Enemy : MonoBehaviour
                     //Debug.Log("LerpTime: " + lerpTime);
                 }
 
-                enemy.transform.position = startPos;
+                Debug.Log("startPos: " + startPos);
+                Debug.Log("positionBefore: " + transform.position);
+                transform.position = startPos;
+                Debug.Log("positionAfter: " + transform.position);
 
                 rotateEnemy();
                 bool sameRot = checkIfSameRotation();
                 if(sameRot){
                     rotateEnemy();
                 }
-            }
+            } else {
+                Debug.Log(transform.position.x);
+                Debug.Log(dicePos.x);
+            }    
         }
     }
 }

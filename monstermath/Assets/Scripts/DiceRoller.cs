@@ -23,7 +23,7 @@ public class DiceRoller : MonoBehaviour
             transform.rotation = Quaternion.Lerp( startRotation, endRotation, t / duration ) ;
             yield return null;
         }
-        transform.rotation = endRotation  ;
+        transform.rotation = endRotation;
         rotating = false;
     }
 
@@ -46,22 +46,22 @@ public class DiceRoller : MonoBehaviour
             Vector3 vector = new Vector3(0, -90, 0);
             StartRotation(vector);
         }
-        if (Input.GetKeyDown("w"))
+        if (Input.GetKeyDown("s"))
         {
             Vector3 vector = new Vector3(0, 0, 90);
             StartRotation(vector);
         }
-        if (Input.GetKeyDown("s"))
+        if (Input.GetKeyDown("w"))
         {
             Vector3 vector = new Vector3(0, 0, -90);
             StartRotation(vector);
         }
-        if (Input.GetKeyDown("q"))
+        if (Input.GetKeyDown("e"))
         {
             Vector3 vector = new Vector3(-90, 0, 0);
             StartRotation(vector);
         }
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown("q"))
         {
             Vector3 vector = new Vector3(90, 0, 0);
             StartRotation(vector);
