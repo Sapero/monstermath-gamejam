@@ -8,6 +8,11 @@ public class Enemy : MonoBehaviour
     private Vector3 startPos;
     private Vector3 dicePos;
 
+    public Material material1;
+    public Material material2;
+    public Material material3;
+    public Material material4;
+
     public float lerpTime = 10.0f;
     private float currentLerpTime = 0;
     private bool keyHit = false;
@@ -31,27 +36,40 @@ public class Enemy : MonoBehaviour
         int howMuchY = Random.Range(0, 3);
         int howMuchZ = Random.Range(0, 3);
 
+        /*if(level == 2)
+            playerDice.transform.LookAt(new Vector3(90.0f, -90.0f, 0.0f));
+        if(level == 3)
+            playerDice.transform.LookAt(new Vector3(0, 0, 0));
+        if(level == 4)
+            playerDice.transform.LookAt(new Vector3(-90.0f, -90.0f, -90.0f));*/
+        
         if(level <= 5){
             transform.Rotate(0, 0, 90*howMuchZ);
             lerpTime *= 0.9f;
             if(level == 5) {
                 lerpTime = 10.0f;
+                GetComponent<Renderer>().material = material2;
             }
         } else if (level <= 10){
             transform.Rotate(90*howMuchX, 0, 90*howMuchZ);
             lerpTime *= 0.9f;
             if(level == 10) {
                 lerpTime = 10.0f;
+                GetComponent<Renderer>().material = material3;
             }
         } else if (level > 11) {
             transform.Rotate(90*howMuchX, 90*howMuchY, 90*howMuchZ);
             lerpTime *= 0.9f;
+            if(level == 15) {
+                GetComponent<Renderer>().material = material4;
+            }
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        GetComponent<Renderer>().material = material1;
         startPos = transform.position;
         dicePos = playerDice.transform.position;
         bool sameRotation = checkIfSameRotation();
@@ -103,6 +121,8 @@ public class Enemy : MonoBehaviour
                     //Debug.Log("Level: " + level);
                     //Debug.Log("LerpTime: " + lerpTime);
                 } else {
+                    GetComponent<Renderer>().material = material1;
+
                     //Debug.Log(playerDice.transform.eulerAngles);
                     //Debug.Log(transform.eulerAngles);
 

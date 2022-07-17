@@ -6115,6 +6115,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDice: {fileID: 1737784006}
+  material1: {fileID: 2100000, guid: e8b5b628a7df3304ea784f49f8d5f3d9, type: 2}
+  material2: {fileID: 2100000, guid: cbff638bf8da3fd4e802669397794885, type: 2}
+  material3: {fileID: 2100000, guid: ca1eda824ec216941b17f26ea3a0693f, type: 2}
+  material4: {fileID: 2100000, guid: 0711445adf5d30c40bd0eb92c9335290, type: 2}
   lerpTime: 5
   level: 0
 --- !u!1001 &2030088513
