@@ -7,6 +7,13 @@ public class DiceRoller : MonoBehaviour
     private bool rotating;
     private float speed = 0.2f;
 
+    public Transform player; // Drag your player here
+    private Vector2 fp; // first finger position
+    private Vector2 lp; // last finger position
+    private float angle;
+    private float swipeDistanceX;
+    private float swipeDistanceY;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,27 +43,59 @@ public class DiceRoller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.touchCount > 0)
+        //https://sushanta1991.blogspot.com/2014/05/simple-swipe-in-unity-using-angle.html
+        foreach(Touch touch in Input.touches)
         {
-            Touch touch = Input.GetTouch(0);
-
-            //Debug.Log("Touch position : " + touch.position);
-
-            for (int i = 0; i < Input.touchCount; ++i)
+            if (touch.phase == TouchPhase.Began)
             {
-                if (Input.GetTouch(i).phase == TouchPhase.Began)
+                fp = touch.position;
+                lp = touch.position;
+            }
+            if (touch.phase == TouchPhase.Moved )
+            {
+                lp = touch.position;
+                swipeDistanceX = Mathf.Abs((lp.x-fp.x));
+                swipeDistanceY = Mathf.Abs((lp.y-fp.y));
+            }
+            if(touch.phase == TouchPhase.Ended)
+            {
+                angle = Mathf.Atan2((lp.x-fp.x),(lp.y-fp.y))*57.2957795f;
+                
+                if(angle > 60 && angle < 120 && swipeDistanceX > 40    )
                 {
-                    // Construct a ray from the current touch coordinates
-                    Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
-
-                    // Create a particle if hit
-                    if (Physics.Raycast(ray))
-                    {
-                        //Debug.Log("hit!");
-                        Vector3 vector = new Vector3(0, 0, 90);
-                        StartRotation(vector);
-                        //Instantiate(particle, transform.position, transform.rotation);
-                    }
+                    print ("right");
+                    Vector3 vector = new Vector3(0, -90, 0);
+                    StartRotation(vector);
+                }
+                if(angle > 150 || angle < -150 && swipeDistanceY > 40)
+                {
+                    print ("down");
+                    Vector3 vector = new Vector3(0, 0, 90);
+                    StartRotation(vector);
+                }
+                if(angle < -60 && angle > -120 && swipeDistanceX > 40)
+                {
+                    print ("left");
+                    Vector3 vector = new Vector3(0, 90, 0);
+                    StartRotation(vector);
+                }
+                if(angle > -30 && angle < 30 && swipeDistanceY > 40)
+                {
+                    print ("up");
+                    Vector3 vector = new Vector3(0, 0, -90);
+                    StartRotation(vector);
+                }
+                if(angle > 120 && angle < 150 && swipeDistanceY > 40)
+                {
+                    print ("down-left->right");
+                    Vector3 vector = new Vector3(-90, 0, 0);
+                    StartRotation(vector);
+                }
+                if(angle > -60 && angle < -30 && swipeDistanceY > 40)
+                {
+                    print ("up->down-left");
+                    Vector3 vector = new Vector3(90, 0, 0);
+                    StartRotation(vector);
                 }
             }
         }
@@ -79,6 +118,16 @@ public class DiceRoller : MonoBehaviour
         if (Input.GetKeyDown("a") || Input.GetKeyDown("left"))
         {
             Vector3 vector = new Vector3(90, 0, 0);
+            StartRotation(vector);
+        }
+        if (Input.GetKeyDown("q") || Input.GetKeyDown("z"))
+        {
+            Vector3 vector = new Vector3(0, 90, 0);
+            StartRotation(vector);
+        }
+        if (Input.GetKeyDown("e") || Input.GetKeyDown("x"))
+        {
+            Vector3 vector = new Vector3(0, -90, 0);
             StartRotation(vector);
         }
     }
