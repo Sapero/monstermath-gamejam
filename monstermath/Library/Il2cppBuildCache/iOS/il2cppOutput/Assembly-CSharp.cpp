@@ -60,7 +60,6 @@ IL2CPP_EXTERN_C RuntimeClass* U3CRotateU3Ed__9_tDE5B2D35057D9A7169B079FC9B176189
 IL2CPP_EXTERN_C String_t* _stringLiteral062DB096C728515E033CF8C48A1C1F0B9A79384B;
 IL2CPP_EXTERN_C String_t* _stringLiteral07F390B26C8A3C9B6428FFF6D0A55D6FD63F0B3E;
 IL2CPP_EXTERN_C String_t* _stringLiteral0909446C4CCC5FBCB2725EFA6E02989BA260BBC0;
-IL2CPP_EXTERN_C String_t* _stringLiteral092E714D4829BC5101F05E21F2796C75E26EE039;
 IL2CPP_EXTERN_C String_t* _stringLiteral0A04B971B03DA607CE6C455184037B660CA89F78;
 IL2CPP_EXTERN_C String_t* _stringLiteral1B00FE8D93C8DA57AEA59DB0FE808A827C3503B6;
 IL2CPP_EXTERN_C String_t* _stringLiteral1B22F82E513C1BB368DFDBFDFB5FB8C1178CA305;
@@ -81,6 +80,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralAAA54DEA6F6A00DBC87B262D3791CBE64F646196
 IL2CPP_EXTERN_C String_t* _stringLiteralB1E5119D36EC43B340C0A0DDC99F1156546EA9DF;
 IL2CPP_EXTERN_C String_t* _stringLiteralDAF2BD03270A51BF9C135F3694DCAD2D3E66F465;
 IL2CPP_EXTERN_C String_t* _stringLiteralE545336EC14757B521DB6D413DC42A0ECEE7AF29;
+IL2CPP_EXTERN_C String_t* _stringLiteralEE688C061607CD2A91C2296AE9508D07BCA42B34;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mC91ACC92AD57CA6CA00991DAF1DB3830BCE07AF8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CRotateU3Ed__9_System_Collections_IEnumerator_Reset_m2381A60343BA488BD54974FD5C2BF927A58D8D34_RuntimeMethod_var;
 struct Exception_t_marshaled_com;
@@ -816,7 +816,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiceRoller_Update_m2758380376490FA59A2FE
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral062DB096C728515E033CF8C48A1C1F0B9A79384B);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral092E714D4829BC5101F05E21F2796C75E26EE039);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0A04B971B03DA607CE6C455184037B660CA89F78);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1B22F82E513C1BB368DFDBFDFB5FB8C1178CA305);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral36282FAC116D9FD6B37CC425310E1A8510F08A53);
@@ -829,6 +828,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiceRoller_Update_m2758380376490FA59A2FE
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA9FEAF5F50923952C1AC3A473DE3C7E17D23B907);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB1E5119D36EC43B340C0A0DDC99F1156546EA9DF);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDAF2BD03270A51BF9C135F3694DCAD2D3E66F465);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEE688C061607CD2A91C2296AE9508D07BCA42B34);
 		s_Il2CppMethodInitialized = true;
 	}
 	TouchU5BU5D_t242545870BFCA81F368CCF82E00F9E2A7FB523B3* V_0 = NULL;
@@ -1032,7 +1032,7 @@ IL_0122:
 
 IL_0154:
 	{
-		// if(angle > 150 || angle < -120 && swipeDistanceY > 40)
+		// if(angle > 150 || angle < -150 && swipeDistanceY > 40)
 		float L_38 = __this->___angle_9;
 		if ((((float)L_38) > ((float)(150.0f))))
 		{
@@ -1041,7 +1041,7 @@ IL_0154:
 	}
 	{
 		float L_39 = __this->___angle_9;
-		if ((!(((float)L_39) < ((float)(-120.0f)))))
+		if ((!(((float)L_39) < ((float)(-150.0f)))))
 		{
 			goto IL_017d;
 		}
@@ -1135,16 +1135,16 @@ IL_01dd:
 
 IL_020f:
 	{
-		// if(angle > -30 && angle < 60 && swipeDistanceY > 40)
+		// if(angle > -60 && angle < 30 && swipeDistanceY > 40)
 		float L_48 = __this->___angle_9;
-		if ((!(((float)L_48) > ((float)(-30.0f)))))
+		if ((!(((float)L_48) > ((float)(-60.0f)))))
 		{
 			goto IL_0238;
 		}
 	}
 	{
 		float L_49 = __this->___angle_9;
-		if ((!(((float)L_49) < ((float)(60.0f)))))
+		if ((!(((float)L_49) < ((float)(30.0f)))))
 		{
 			goto IL_0238;
 		}
@@ -1181,16 +1181,16 @@ IL_0239:
 
 IL_026b:
 	{
-		// if(angle > 120 && angle < 150 && swipeDistanceY > 40)
+		// if(angle > -150 && angle < -120 && swipeDistanceY > 40)
 		float L_53 = __this->___angle_9;
-		if ((!(((float)L_53) > ((float)(120.0f)))))
+		if ((!(((float)L_53) > ((float)(-150.0f)))))
 		{
 			goto IL_0294;
 		}
 	}
 	{
 		float L_54 = __this->___angle_9;
-		if ((!(((float)L_54) < ((float)(150.0f)))))
+		if ((!(((float)L_54) < ((float)(-120.0f)))))
 		{
 			goto IL_0294;
 		}
@@ -1218,8 +1218,8 @@ IL_0295:
 	{
 		// print ("down-left->right");
 		MonoBehaviour_print_mED815C779E369787B3E9646A6DE96FBC2944BF0B(_stringLiteral78620305EB608F150ACDFCBF85DADA4AEE8C9466, NULL);
-		// Vector3 vector = new Vector3(-90, 0, 0);
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_15), (-90.0f), (0.0f), (0.0f), NULL);
+		// Vector3 vector = new Vector3(90, 0, 0);
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_15), (90.0f), (0.0f), (0.0f), NULL);
 		// StartRotation(vector);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = V_15;
 		DiceRoller_StartRotation_mC02586BA924991702CCB1DC54E82CE8FC200BA3C(__this, L_57, NULL);
@@ -1227,16 +1227,16 @@ IL_0295:
 
 IL_02c7:
 	{
-		// if(angle > -60 && angle < -30 && swipeDistanceY > 40)
+		// if(angle > 30 && angle < 60 && swipeDistanceY > 40)
 		float L_58 = __this->___angle_9;
-		if ((!(((float)L_58) > ((float)(-60.0f)))))
+		if ((!(((float)L_58) > ((float)(30.0f)))))
 		{
 			goto IL_02f0;
 		}
 	}
 	{
 		float L_59 = __this->___angle_9;
-		if ((!(((float)L_59) < ((float)(-30.0f)))))
+		if ((!(((float)L_59) < ((float)(60.0f)))))
 		{
 			goto IL_02f0;
 		}
@@ -1262,10 +1262,10 @@ IL_02f1:
 		}
 	}
 	{
-		// print ("up->down-left");
-		MonoBehaviour_print_mED815C779E369787B3E9646A6DE96FBC2944BF0B(_stringLiteral092E714D4829BC5101F05E21F2796C75E26EE039, NULL);
-		// Vector3 vector = new Vector3(90, 0, 0);
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_17), (90.0f), (0.0f), (0.0f), NULL);
+		// print ("down->up-right");
+		MonoBehaviour_print_mED815C779E369787B3E9646A6DE96FBC2944BF0B(_stringLiteralEE688C061607CD2A91C2296AE9508D07BCA42B34, NULL);
+		// Vector3 vector = new Vector3(-90, 0, 0);
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_17), (-90.0f), (0.0f), (0.0f), NULL);
 		// StartRotation(vector);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62 = V_17;
 		DiceRoller_StartRotation_mC02586BA924991702CCB1DC54E82CE8FC200BA3C(__this, L_62, NULL);

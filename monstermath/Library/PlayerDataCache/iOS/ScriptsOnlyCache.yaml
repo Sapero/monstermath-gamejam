@@ -864,4 +864,4 @@ ScriptsOnlyBuild:
   platform: 9
   scenePathNames:
   - Assets/Forest Pack/Scenes/DemoScene.unity
-  playerPath: /Users/marcusnygren/Development/Builds/Iphone
+  playerPath: /Users/marcusnygren/Development/Builds/Iphone2
