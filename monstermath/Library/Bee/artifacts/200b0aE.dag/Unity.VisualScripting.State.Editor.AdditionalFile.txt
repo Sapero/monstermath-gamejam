@@ -1,1 +1,1 @@
-C:\Users\Marcus Nygren\Development\monstermath-gamejam\monstermath
+/Users/marcusnygren/Development/monstermath-gamejam/monstermath

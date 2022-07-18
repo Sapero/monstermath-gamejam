@@ -112,9 +112,9 @@ public class Enemy : MonoBehaviour
                     
                     if(points > highScore) {
                         highScore = points;
-                        Debug.Log(points + " points (high score!)");
+                        ///Debug.Log(points + " points (high score!)");
                     } else {
-                        Debug.Log(points + " point(s)");
+                        ///Debug.Log(points + " point(s)");
                     }
 
                     level += 1;
@@ -128,9 +128,9 @@ public class Enemy : MonoBehaviour
                     //Debug.Log(transform.eulerAngles);
 
                     if(points <= highScore) {
-                        Debug.Log("Score: " + points + ". High score: " + highScore + ". Try again? [Press SPACE]");
+                        ///Debug.Log("Score: " + points + ". High score: " + highScore + ". Try again? [Press SPACE]");
                      } else if(points > 0) {
-                         Debug.Log("Congrats, " + highScore + " is a new high score! Try again? [Press SPACE]");
+                         ///Debug.Log("Congrats, " + highScore + " is a new high score! Try again? [Press SPACE]");
                      };
 
                     //Debug.Log(playerDice.transform.eulerAngles);
@@ -144,10 +144,10 @@ public class Enemy : MonoBehaviour
                     //Debug.Log("LerpTime: " + lerpTime);
                 }
 
-                Debug.Log("startPos: " + startPos);
-                Debug.Log("positionBefore: " + transform.position);
+                ///Debug.Log("startPos: " + startPos);
+                ///Debug.Log("positionBefore: " + transform.position);
                 transform.position = startPos;
-                Debug.Log("positionAfter: " + transform.position);
+                ///Debug.Log("positionAfter: " + transform.position);
 
                 rotateEnemy();
                 bool sameRot = checkIfSameRotation();

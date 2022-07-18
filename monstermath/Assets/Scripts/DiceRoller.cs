@@ -6,6 +6,9 @@ public class DiceRoller : MonoBehaviour
 {
     private bool rotating;
     private float speed = 0.2f;
+    public GameObject rightObject;
+    public GameObject frontObject;
+    public int rotateRight;
 
     // Start is called before the first frame update
     void Start()
@@ -36,30 +39,25 @@ public class DiceRoller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.touchCount > 0)
+        /*if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
-
-            //Debug.Log("Touch position : " + touch.position);
 
             for (int i = 0; i < Input.touchCount; ++i)
             {
                 if (Input.GetTouch(i).phase == TouchPhase.Began)
-                {
-                    // Construct a ray from the current touch coordinates
-                    Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
-
-                    // Create a particle if hit
-                    if (Physics.Raycast(ray))
-                    {
-                        //Debug.Log("hit!");
+                {*/
+                    //Debug.Log(rotateRight);
+                    if(rotateRight > 1) {
                         Vector3 vector = new Vector3(0, 0, 90);
                         StartRotation(vector);
-                        //Instantiate(particle, transform.position, transform.rotation);
-                    }
-                }
+                    } /*else {
+                        Vector3 vector = new Vector3(0, 0, -90);
+                        StartRotation(vector);
+                    }*/
+                /*}
             }
-        }
+        }*/
 
         if (Input.GetKeyDown("s")  || Input.GetKeyDown("down"))
         {
