@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -81,7 +82,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown (KeyCode.Space) && !keyHit) {
+        if ((Input.GetKeyDown (KeyCode.Space) || Input.touchCount > 0) && !keyHit) {
             keyHit = true;
             rotateEnemy();
         }
@@ -153,10 +154,7 @@ public class Enemy : MonoBehaviour
                 if(sameRot){
                     rotateEnemy();
                 }
-            } else {
-                Debug.Log(transform.position.x);
-                Debug.Log(dicePos.x);
-            }    
+            }
         }
     }
 }
