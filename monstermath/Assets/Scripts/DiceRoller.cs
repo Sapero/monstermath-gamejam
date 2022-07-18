@@ -67,7 +67,7 @@ public class DiceRoller : MonoBehaviour
                     Vector3 vector = new Vector3(0, -90, 0);
                     StartRotation(vector);
                 }
-                if(angle > 150 || angle < -150 && swipeDistanceY > 40)
+                if(angle > 150 || angle < -120 && swipeDistanceY > 40)
                 {
                     print ("down");
                     Vector3 vector = new Vector3(0, 0, 90);
@@ -79,7 +79,7 @@ public class DiceRoller : MonoBehaviour
                     Vector3 vector = new Vector3(0, 90, 0);
                     StartRotation(vector);
                 }
-                if(angle > -30 && angle < 30 && swipeDistanceY > 40)
+                if(angle > -30 && angle < 60 && swipeDistanceY > 40)
                 {
                     print ("up");
                     Vector3 vector = new Vector3(0, 0, -90);

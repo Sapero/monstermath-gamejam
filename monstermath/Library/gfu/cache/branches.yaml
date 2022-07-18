@@ -13,25 +13,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2022-07-17T20:27:46.977+02:00
-  initializedAtString: 2022-07-17T17:47:13.036+02:00
+  lastUpdatedAtString: 2022-07-18T15:53:13.260+02:00
+  initializedAtString: 2022-07-18T15:53:13.233+02:00
   localBranches:
   - name: develop
     tracking: origin/develop
-  - name: environment
-    tracking: origin/environment
-  - name: github-for-unity
-    tracking: 
-  - name: withmodels
-    tracking: origin/withmodels
+  - name: touchControls
+    tracking: origin/touchControls
   remoteBranches:
-  - name: origin/develop
-    tracking: '[None]'
-  - name: origin/environment
-    tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
-  - name: origin/withmodels
+  - name: origin/develop
+    tracking: '[None]'
+  - name: origin/touchControls
     tracking: '[None]'
   remotes:
   - name: origin
@@ -44,57 +38,39 @@ MonoBehaviour:
   localConfigBranches:
     keys:
     - develop
-    - environment
-    - github-for-unity
-    - withmodels
+    - touchControls
     values:
     - name: develop
       remote:
         name: origin
         url: https://github.com/Sapero/monstermath-gamejam.git
       trackingBranch: develop
-    - name: environment
+    - name: touchControls
       remote:
         name: origin
         url: https://github.com/Sapero/monstermath-gamejam.git
-      trackingBranch: environment
-    - name: github-for-unity
-      remote:
-        name: 
-        url: 
-      trackingBranch: 
-    - name: withmodels
-      remote:
-        name: origin
-        url: https://github.com/Sapero/monstermath-gamejam.git
-      trackingBranch: withmodels
+      trackingBranch: touchControls
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
-      - develop
-      - environment
       - HEAD
-      - withmodels
+      - develop
+      - touchControls
     subKeyValues:
     - Values:
-      - name: develop
-        remote:
-          name: origin
-          url: https://github.com/Sapero/monstermath-gamejam.git
-        trackingBranch: 
-      - name: environment
-        remote:
-          name: origin
-          url: https://github.com/Sapero/monstermath-gamejam.git
-        trackingBranch: 
       - name: HEAD
         remote:
           name: origin
           url: https://github.com/Sapero/monstermath-gamejam.git
         trackingBranch: 
-      - name: withmodels
+      - name: develop
+        remote:
+          name: origin
+          url: https://github.com/Sapero/monstermath-gamejam.git
+        trackingBranch: 
+      - name: touchControls
         remote:
           name: origin
           url: https://github.com/Sapero/monstermath-gamejam.git
