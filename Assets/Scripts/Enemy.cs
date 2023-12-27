@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
         return hasSameAngle;
     }
 
-    void rotateEnemy() {
+    public void rotateEnemy() {
         int howMuchX = Random.Range(0, 3);
         int howMuchY = Random.Range(0, 3);
         int howMuchZ = Random.Range(0, 3);

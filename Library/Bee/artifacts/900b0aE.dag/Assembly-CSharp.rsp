@@ -355,6 +355,8 @@
 -r:"Library/Bee/artifacts/900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/DiceRoller.cs"
 "Assets/Scripts/Enemy.cs"
+"Assets/Scripts/Managers/ScenesManager.cs"
+"Assets/Scripts/UI/UIMainMenu.cs"
 -langversion:9.0
 
 /deterministic
